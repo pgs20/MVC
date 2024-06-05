@@ -34,7 +34,7 @@ public class PostController {
   }
 
   @DeleteMapping("/{id}")
-  public void removeById(long id) {
+  public void removeById(@PathVariable("id") long id) {
     service.removeById(id);
   }
 }
